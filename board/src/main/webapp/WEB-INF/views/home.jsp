@@ -7,9 +7,20 @@
 </head>
 <body>
 <h1>
-	Hello world!  
+	Spring 게시판입니다.
 </h1>
 
-<P>  The time on the server is ${serverTime}. </P>
+<p>
+	
+	<!-- <a href="/board/list">게시물 목록</a>
+	<a href="/board/write">게시물 작성</a> -->
+	
+	<input id="Homebtn_board_list" type="button" value="게시물 목록" text-align="center" onclick="location.href='/board/list'"/>
+	<input id="Homebtn_board_write" type="button" value="게시물 작성" text-align="center" onclick="location.href='/board/write'"/>
+	
+</p>
+
+<P> ${serverTime}. </P>
+
 </body>
 </html>
